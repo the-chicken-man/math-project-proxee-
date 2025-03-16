@@ -1,117 +1,83 @@
-/* Custom CSS for black theme */
+/* General Styles */
 body {
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+   background-color: #000;
+   color: #00ff00;
+   font-family: 'Oswald', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin: 0;
 }
 
 #header {
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
+   margin-bottom: 20px;
 }
 
-#header h1 {
-  margin: 0;
-  font-size: 24px;
-  font-family: 'Arial', sans-serif;
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.logo {
+   width: 150px;
+   animation: pulse 2s infinite;
 }
 
-#header img {
-  width: 20%;
-  height: auto;
+@keyframes pulse {
+   0%, 100% { transform: scale(1); }
+   50% { transform: scale(1.1); }
 }
 
+/* Content Styles */
 #content {
-  text-align: center;
-  padding: 20px;
-  margin-top: -4%;
+   text-align: center;
 }
 
-#content h1 {
-  font-size: 24px;
-  cursor:pointer;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-#searchbar {
-  text-align: center;
-  margin: 20px auto;
+h1 {
+   font-size: 1.8em;
+   text-transform: uppercase;
+   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
 
 .form__input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 300px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-  background-color: #222;
-  text-align: center;
-  color: #fff;
-  cursor:cell;
-}
-
-a{
-  text-decoration: none;
-  color:white;
-  width:50px;
-  height:50px;
-  padding-right: 1px;
-  padding-left: 1px;
-  text-align: center;
-  align-self: center;
+   width: 300px;
+   padding: 10px;
+   font-size: 16px;
+   border: 2px solid #00ff00;
+   background-color: black;
+   color: #00ff00;
+   outline: none;
+   text-shadow: 0 0 5px #00ff00;
 }
 
 .form__input::placeholder {
-  color: #aaa;
-  text-align: center;
+   color: #00ff00;
 }
 
-.form_input:hover{
-  cursor:cell;
+/* Error Display */
+.desc {
+   min-height: 30px;
+   margin-top: 10px;
 }
 
-.form__input:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+/* Social Links */
+.social-links a {
+   color: #00ff00;
+   font-size: 2em;
+   margin: 0 15px;
+   transition: transform 0.3s ease;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.social-links a:hover {
+   transform: scale(1.3);
+}
+
+/* Footer */
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #99ccff;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  height:15px;
-  background-color: #000;
-  padding-top: 7.5px;
-  padding-bottom: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
+   position: fixed;
+   bottom: 10px;
+   text-align: center;
 }
 
-#footer p {
-  margin: 0;
-}
-
-.fa {
-  font-size: 24px;
-  margin-right: 10px;
-  color: #fff;
-}
-
-.fa:hover {
-  color: #aaa;
+/* Input Focus */
+.form__input:focus {
+   border-color: #ff0000;
+   text-shadow: 0 0 10px #ff0000;
 }
