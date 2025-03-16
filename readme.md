@@ -1,16 +1,14 @@
-# This is an archive and is no longer developed. Go to [tf7software/UV-Static](https://github.com/tf7software/UV-Static) for the newest version. Thank you.
-## TIW Static UV
+# This is a proxy service to acess blocked web at school or work go to https://an-interesting-thing.vercel.app/static/ for the newest site
 
-## Old readme:
 Modified Version of the <a href="https://github.com/titaniumnetwork-dev/Ultraviolet-App" target="blank">Ultraviolet</a> backend. This modification changes the proxy **CONFIG**, making it work on static pages. 
-<br> <strong> Our Developers That Worked on This Project: </strong>
-NC Gaming#0058 and kwazeh  <center> Join our discord <a href="https://discord.com/invite/XctyeqGGt4" target="_blank" style="text-decoration:none;"> here </a><br>
-<a> <img src="static/logo.gif" style="width:25%; align-self:center;"> </img> </a> 
+<br> <strong>  Dev credit: </strong>
+Chicken_man  <center> 
+<a> <img src="static/logo.png" style="width:25%; align-self:center;"> </img> </a> 
 </center> <br>
 
 ## Features
 
-- Search the web using the FIRST static proxy.
+- Search the web using the best static proxy made by the creators of the math project: https://docs.google.com/document/d/1HglxTUccNO7PPUPPtLnBzGx7Vp8n9w8d4Q0bXsm4JFs/edit?tab=t.8ylipecz2893
 - Access to any website
 - Deployable on any static hosting platform
 <br><br>
