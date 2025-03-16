@@ -14,10 +14,10 @@
 <body>
    <div id="browser">
       <div id="browser-header">
-         <div class="tabs">
-            <div class="tab active">New Tab</div>
-            <button id="new-tab"><i class="fa fa-plus"></i></button>
+         <div class="tabs" id="tabs">
+            <div class="tab active" data-tab-id="1">New Tab 1</div>
          </div>
+         <button id="new-tab"><i class="fa fa-plus"></i></button>
          <div class="address-bar">
             <input id="uv-address" type="text" placeholder="Search DuckDuckGo or type a URL..." class="form__input"/>
             <button id="search-btn"><i class="fa fa-search"></i></button>
@@ -25,10 +25,7 @@
       </div>
 
       <div id="content">
-         <h1>Bypass blocks and hack the web!</h1>
-         <form id="uv-form">
-            <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden"/> 
-         </form>
+         <iframe id="proxy-frame" src="" frameborder="0"></iframe>
          <div class="desc">
             <p id="uv-error"></p>
             <pre id="uv-error-code"></pre>
@@ -44,11 +41,7 @@
       </div>
    </div>
 
-   <script src="uv/uv.bundle.js" defer></script>
-   <script src="uv/uv.config.js" defer></script>
-   <script src="register-sw.js" defer></script>
-   <script src="search.js" defer></script>
-   <script src="index.js" defer></script>
-   <script src="error.js" defer></script>
+   <script src="index.js"></script>
 </body>
 </html>
+
